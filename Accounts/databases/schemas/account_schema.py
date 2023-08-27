@@ -16,6 +16,7 @@ class UserAccount(Base):
     phone_number: Mapped[str] = mapped_column(String(13), unique=True)
     mail: Mapped[str] = mapped_column(String(30), unique=True, nullable=True)
     fullname: Mapped[str] = mapped_column(String(50))
+    id_card: Mapped[str] = mapped_column(String)
     date_of_birth: Mapped[datetime.date] = mapped_column(Date)
 
     def __repr__(self):
