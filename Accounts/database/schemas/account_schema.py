@@ -2,7 +2,8 @@ import datetime
 
 from sqlalchemy import func, String, Date
 from sqlalchemy.orm import Mapped, mapped_column
-from Accounts.databases.base.base import Base
+
+from databases_config.postgres_base.base import Base
 
 
 class UserAccount(Base):

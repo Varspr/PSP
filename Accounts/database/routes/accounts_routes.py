@@ -5,9 +5,9 @@ from fastapi import APIRouter, Header, HTTPException
 from fastapi.openapi.models import Response
 from sqlalchemy.ext.asyncio import async_sessionmaker
 
-from Accounts.databases.base.postgres_base import engine
-from Accounts.databases.models.account_model import AccountResponse
-from Accounts.databases.service.account_service import AccountService
+from Accounts.database.models.account_model import AccountResponse
+from Accounts.database.service.account_service import AccountService
+from databases_config.postgres_base.postgres_engine import engine
 
 router = APIRouter(
     prefix="/account",

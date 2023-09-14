@@ -1,9 +1,8 @@
-import asyncio
-import datetime
+
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession
-from Accounts.databases.base.postgres_base import engine
-from Accounts.databases.schemas.account_schema import UserAccount
+
+from Accounts.database.schemas.account_schema import UserAccount
 
 
 class AccountService:
