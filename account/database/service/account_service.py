@@ -2,7 +2,7 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession
 
-from Accounts.database.schemas.account_schema import UserAccount
+from account.database.schemas.account_schema import UserAccount
 
 
 class AccountService:

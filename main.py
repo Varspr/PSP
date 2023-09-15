@@ -3,11 +3,7 @@ import asyncio
 import uvicorn
 from fastapi import FastAPI
 
-from Accounts.databases.base.base import Base
-from Accounts.databases.base.postgres_base import engine
-from Accounts.databases.schemas.account_schema import UserAccount
-
-from Accounts.databases.routes import accounts_routes
+from account.database.routes import accounts_routes
 
 app = FastAPI()
 app.include_router(accounts_routes.router)

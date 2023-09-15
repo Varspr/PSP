@@ -15,3 +15,5 @@ SQLAlchemy, Alembic
 Контейнеры: Docker/Compose(После разделения на микросервисы)
 Оркестрация контейнеров: Kubernetes
 
+
+
